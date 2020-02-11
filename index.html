@@ -36,7 +36,7 @@
         }
         .ghost_eye {
             fill: black;
-            stroke: white;
+            stroke: red;
             stroke-width: 2;
         }
         #ghost1 {
@@ -283,7 +283,7 @@
                 playingPacman = false;
                 return;
             } else if (eaten_by_ghosts === true) {
-                win_or_lose_text.innerHTML = "Game over";
+                win_or_lose_text.innerHTML = "Perdeuu";
                 document.getElementById("pacmanSVG").appendChild(play_text);
                 playingPacman = false;
                 return;
