@@ -56,7 +56,7 @@
         }
         #win_or_lose_text {
             fill: white;
-			font-size: 80px;
+			font-size: 50px;
 			text-anchor: middle;
         }
         #score_text {
@@ -68,7 +68,7 @@
 			fill: white;
 		}
         .ball {
-            fill: white;
+            fill: rgb(255, 255, 255);
         }
         .ghosts {
             fill: purple;
@@ -278,12 +278,13 @@
             document.getElementById("score_text").innerHTML = "Score: " + parseInt((score - time_taken / 10), 10);
 
             if (total_balls_eaten === 61) {
-                win_or_lose_text.innerHTML = "Ganhouu";
+                win_or_lose_text.innerHTML = "Ganhouu seu cagão";
                 document.getElementById("pacmanSVG").appendChild(play_text);
                 playingPacman = false;
                 return;
             } else if (eaten_by_ghosts === true) {
-                win_or_lose_text.innerHTML = "Perdeuu";
+                win_or_lose_text.innerHTML = "Perdeuu trouxa";
+                
                 document.getElementById("pacmanSVG").appendChild(play_text);
                 playingPacman = false;
                 return;
